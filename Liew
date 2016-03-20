@@ -1,0 +1,12 @@
+#download.file("https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv", destfile = "./pml-training.csv")
+#download.file("http://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv", destfile = "./pml-testing.csv")
+
+setwd("E:\\Dropbox\\Github\\Rcourses\\08_PracticalMachineLearning\\project")
+
+trainingOrg = read.csv("pml-training.csv", na.strings=c("", "NA", "NULL"))
+# data.train =  read.csv("https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv", na.strings=c("", "NA", "NULL"))
+
+testingOrg = read.csv("pml-testing.csv", na.strings=c("", "NA", "NULL"))
+dim(trainingOrg)
+
+## [1] 19622   160
